@@ -1,0 +1,16 @@
+<style>
+    .error{
+        color: rgb(255, 0, 0);
+        text-align: center;
+        height: 1.2em;
+        font-size: 1.2em;
+        padding-top: 2px;
+        position: absolute;
+        top: 15%;
+        width: 100%;
+    }
+</style>
+
+{{#each error}}
+<h2 class="error">{{message}}</h2>
+{{/each}}

@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/css/home/activated.css">
+<body style="background-image: url('/img/home.jpg');">
+</body>
+<form action="/register" method="post" class="container">
+    <div class="registration">
+        <div class="information">
+            <h1>Account activated successfully!</h1>
+            <p>You will be redirected to the login page in:</p>
+            <p id="count">#</p>
+        </div>
+    </div>
+</form>
+
+<script>
+    let count = document.getElementById('count')
+    let number = 5
+    count.innerHTML = number
+
+    for(i = 5; i > 0; i--){
+        setTimeout(() => {
+            number--
+            count.innerHTML = number
+        }, (6 - i) * 1000)
+
+    }
+
+    setTimeout(() => {window.location.href = "/home/login"}, 5000)
+</script>

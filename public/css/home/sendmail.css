@@ -1,0 +1,43 @@
+.registration{
+    width: 25%;
+    height: 300px;
+    background-color: #cccbcb;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 8px;
+}
+
+.information{
+    width: 97%;
+    height: 95%;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.26);
+    text-align: center;
+}
+
+h1{
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 5%;
+}
+
+h2{
+    font-size: 1.2em;
+    margin-top: 4%;
+}
+
+p{
+    margin-top: 6%;
+}
+
+#count{
+    font-size: 1.6em;
+    font-weight: 600;
+}

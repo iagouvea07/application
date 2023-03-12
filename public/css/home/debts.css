@@ -1,0 +1,89 @@
+h2{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+    
+section{
+    width: 25%;
+    height: 350px;
+    background-color: #cccbcb;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -40%);
+    border-radius: 8px;
+}
+
+.form{
+    width: 97%;
+    height: 98%;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.26);
+}
+
+div{
+    margin-left: 10%;
+}
+
+.text{
+    width: 98%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-1%, -56%);
+}
+
+
+input, select{
+    margin-top: 10%;
+    height: 1.7em;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.295);
+    border-width: 1px;
+}
+
+.ticker{
+    width: 60%;
+}
+
+.value{
+    width: 60%;
+    margin-left: 1.5%;
+}
+
+.date{
+    width: 61.5%;
+    margin-left: 2%;
+}
+
+label{
+    font-size: 0.8em;
+}
+
+.submit{
+    transform: translate(25%, 0);
+    width: 50%;
+    height: 3em;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgb(65, 167, 250);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.submit:hover{
+    background: rgb(15, 119, 189);
+    transition: 400ms;
+}
+
+.submit:active{
+    background: rgb(27, 93, 158);
+    transition: 100ms;
+}

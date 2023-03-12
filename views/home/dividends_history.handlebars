@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="/css/home/dividends_history.css">
+{{>menu}}
+<body>
+    <form action="" method="post">
+        <header>
+            <h2>Historico de Dividendos</h2>
+        </header>
+        <section>
+            <div class="form">
+                <div>
+                    <label for="ticker">Ticker</label>
+                    <select name="ticker" id="ticker">
+                        <option value="0"></option>
+                        {{#each tickers}}
+                        <option value={{ticker}}>{{ticker}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div>
+                    <label for="year">Ano</label>
+                    <select name="year" id="year">
+                        <option value="2023"year>2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="month">Mes</label>
+                    <select name="month" id="month">
+                        <option value="0"></option>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" name="" id="" value="Gerar Relatorio">
+                </div>
+            </div>
+        </section>
+        {{#each valor}}
+        <div class="total">
+            <p>Total: {{total}}</p>
+        </div>
+        {{/each}}
+        <div class="background">
+            <div class="list">
+            {{#each item}}
+                <div class="item">
+                    <p class="name">{{name}}</p>
+                    <p class="ticker">{{ticker}}</p>
+                    <p class="value">{{value}}</p>
+                    <p class="date">{{date}}</p>
+                </div>
+            {{/each}}
+            </div>
+        </div>
+    </form>
+</body>

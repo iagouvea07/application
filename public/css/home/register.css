@@ -1,0 +1,80 @@
+.registration{
+    width: 45%;
+    height: 650px;
+    background-color: #cccbcb;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 8px;
+}
+
+.information{
+    width: 97%;
+    height: 95%;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.26);
+}
+
+.data{
+    width: 40%;
+    display: block;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+
+label{
+    font-size: 13px;
+    user-select: none;
+}
+
+input{
+    margin-top: 5px;
+    width: 90%;
+    height: 1.8em;
+    border-radius: 8px;
+    border-color: rgba(78, 78, 78, 0.274);
+    margin-bottom: 17px;
+}
+
+#register{
+    width: 200%;
+    height: 2.5em;
+    border-radius: 12px;
+    margin-top: 15%;
+    background: rgb(65, 167, 250);
+    color: white;
+    border-style: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+#register:hover{
+    background: rgb(15, 119, 189);
+    transition: 400ms;
+}
+
+#register:active{
+    background: rgb(27, 93, 158);
+    transition: 100ms;
+}
+
+.icon{
+    width: 40%;
+    height: 40;
+    position: absolute;
+    top: 33%;
+    right: -3%;
+    transform: translate(0, -50%);
+}
+
+img{
+    width: 50%;
+    user-select: none;
+}

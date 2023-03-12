@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="/css/home/stocks.css">
+{{>menu}}
+{{>error}}
+{{>success}}
+<body>
+    <form action="" method="post">
+        <h2>Cadastro de Ativos</h2>
+        <section>
+            <div class="text">
+                <div class="form">  
+                    <div class="data">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" maxlength="35">
+                    </div>
+                    <div class="data">
+                        <label for="ticker">Ticker</label>
+                        <input type="text" name="ticker" id="ticker" maxlength="6">
+                    </div>
+                    <div class="data">
+                        <input type="submit" name="" id="" value="Cadastrar" class="submit">
+                    </div>
+            </div>
+            </div>
+            <div class="list">
+            {{#each names}}
+                <div class="stock">
+                    <p class="name">{{name}}</p>
+                    <p class="ticker">{{ticker}}</p>
+                </div>
+            {{/each}}
+            </div>
+        </section>
+    </form>
+</body>

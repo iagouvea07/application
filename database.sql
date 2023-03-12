@@ -1,0 +1,44 @@
+CREATE DATABASE app DEFAULT CHARSET UTF8;
+
+USE app;
+
+CREATE TABLE users (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(20) NOT NULL,
+    email VARCHAR(200) NOT NULL,
+    username VARCHAR(20) NOT NULL,
+    password VARCHAR(100),
+    temppass VARCHAR(15)
+);
+
+CREATE TABLE sessions (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(20) NOT NULL,
+    token VARCHAR(300) NOT NULL
+);
+
+CREATE TABLE stocks (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    ticker VARCHAR(6) NOT NULL
+);
+
+CREATE TABLE stocks_dividends (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    ticker VARCHAR(6) NOT NULL,
+    value VARCHAR(10) NOT NULL,
+    date DATE
+);
+
+CREATE TABLE payment_type (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    cnpj VARCHAR(18) NOT NULL
+);
+
+CREATE TABLE debts (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    value VARCHAR(10),
+    date DATE
+);

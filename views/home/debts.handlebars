@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="/css/home/debts.css">
+{{>menu}}
+{{>error}}
+{{>success}}
+<body>
+    <form action="" method="post">
+        <h2>Registro de Pagamentos</h2>
+        <section>
+            <div class="form">  
+                <div class="text">
+                    <div class="data">
+                        <label for="name">Conta</label>
+                        <select name="name" id="name">
+                            {{#each payments}}
+                            <option value="{{name}}">{{name}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                    <div class="data">
+                        <label for="value">Valor</label>
+                        <input type="number" name="value" id="value" step="any" class="value">
+                    </div>
+                    <div class="data">
+                        <label for="date">Data</label>
+                        <input type="date" name="date" id="date" class="date">
+                    </div>
+                    <div class="data">
+                        <input type="submit" name="" id="" value="Cadastrar" class="submit">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+</body>

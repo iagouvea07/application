@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="/css/home/dashboard.css">
+{{>menu}}
+<style>
+.weight{
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-100%, 20%);
+}
+
+.investments{
+    width: 48vh;
+    display: flex;
+}
+
+.payments{
+    margin-top: 2%;
+    width: 48vh;
+    display: flex;
+}
+
+
+#container div{
+    padding: 4vh;
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 20vh;
+    text-align: center;
+    display: inline-block;
+}
+
+</style>
+<div class="weight">
+    <div class="investments">
+        <canvas id="myChart_weight_dividends" width="100" height="70"></canvas>
+        <canvas id="myChart_weight_enterprise" width="100" height="70"></canvas>
+    </div>
+    <div class="payments">
+        <canvas id="myChart_dividends" width="100" height="70"></canvas>
+        <canvas id="myChart_enterprise" width="100" height="70"></canvas>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<script src="/js/chart_dividends.js"></script>
+<script src="/js/chart_weight_dividends.js"></script>
+<script src="/js/chart_enterprise.js"></script>
+<script src="/js/chart_weight_enterprise.js"></script>
+<script src="/js/stocks.js"></script>

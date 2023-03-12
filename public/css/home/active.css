@@ -1,0 +1,57 @@
+.container{
+    margin-top: 5%;
+}
+.registration{
+    width: 20%;
+    height: 320px;
+    background-color: #cccbcb;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 8px;
+}
+
+.information{
+    width: 97%;
+    height: 95%;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.26);
+}
+
+input{
+    margin-top: 2%;
+    margin-left: 19%;
+    width: 60%;
+    height: 2em;
+    border-radius: 8px;
+    border-color: rgba(78, 78, 78, 0.274);
+    margin-bottom: 17px;
+}
+
+#register{
+    width: 60%;
+    height: 2.5em;
+    border-radius: 12px;
+    margin-top: 5%;
+    background: rgb(65, 167, 250);
+    color: white;
+    border-style: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+#register:hover{
+    background: rgb(89, 158, 226);
+    transition: 400ms;
+}
+
+#register:active{
+    background: rgb(27, 93, 158);
+    transition: 100ms;
+}

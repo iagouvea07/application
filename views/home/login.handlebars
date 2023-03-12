@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/home/login.css">
+<body style="background-image: url('/img/home.jpg');">
+    <form action="" method="post" class="login-page">
+        <section class="form-login">
+            {{>error}}
+            <section class="inputs">   
+                <div>
+                    <input type="text" name="username" placeholder="Username">
+                </div>
+                <div>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <div>
+                    <input type="submit" value="Login" class="login">
+                </div>
+                <div>
+                    <a href="/home/register" class="create-acc"><p>Create new account!</p></a>
+                </div>
+            </section>
+        </section>
+    </form>
+</body>

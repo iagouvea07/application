@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/home/payments.css">
+{{>menu}}
+{{>error}}
+{{>success}}
+<body>
+    <form action="" method="post">
+        <h2>Cadastro de Pagamentos</h2>
+        <section>
+            <div class="form">  
+                <div class="data">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" maxlength="35">
+                </div>
+                <div class="data">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" name="cnpj" id="cnpj" maxlength="18">
+                </div>
+                <div class="data">
+                    <input type="submit" name="" id="" value="Cadastrar" class="submit">
+                </div>
+            </div>
+            <div class="list">
+            {{#each payments}}
+                <div class="payments">
+                    <p class="name">{{name}}</p>
+                    <p class="cnpj">{{cnpj}}</p>
+                </div>
+            {{/each}}
+            </div>
+        </section>
+    </form>
+</body>
